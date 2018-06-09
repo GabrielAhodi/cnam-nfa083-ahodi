@@ -10,11 +10,12 @@
 <!-- CONNEXION A LA BDD ======================================================== -->
 <?php
      include 'inc/connexion.inc.php';
-      
+     $con = connexion("cnamcp09_nfa083_2017"); /* nom de la BDD */ 
+
     ?>
     <!-- SATISFACTION ============================================================== -->
     <section>
-        <?php include("inc/form-question.inc.php");
+        <?php include 'inc/form-question.inc.php';
                  include("inc/form-question-recup.inc.php");
                  include("inc/question-insert.inc.php"); ?>
     </section>

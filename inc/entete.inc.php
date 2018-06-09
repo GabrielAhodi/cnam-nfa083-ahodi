@@ -10,7 +10,7 @@
         <?php echo $title; ?>
     </title>
     <meta charset='UTF-8' />
-    <link rel="stylesheet" href="./css/style.css" type="text/css" />
+    <link href="./css/style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>

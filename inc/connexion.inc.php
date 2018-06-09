@@ -1,16 +1,13 @@
-<?php 
+<?php /* fichier cnam/nfa017/2017-cf1/inc/connexion.php - 20180604-PBO */
+
+function connexion($bddname) {
 /* variables de connexion =================================================== */
-    $serveur = 'localhost';
-    $bddname = 'cnamcp09_nfa083_2017';
-    $loginserveur = 'root';   
-    $mdpserveur = ''; 
+    $serveur = 'localhost';       $loginserveur = 'root';   $mdpserveur = ''; // variables connexion serveur
+
 
 /* connexion ================================================================ */
-try{
-$con = new PDO('mysql:host='.$serveur.';dbname='.$bddname.';charset=utf8',$loginserveur, $mdpserveur);
+    $pdo_options[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;      // option pour capturer messages d'erreur
+    $pdo_options[PDO::MYSQL_ATTR_INIT_COMMAND] = 'SET NAMES utf8'; // option pour charset UTF-8
+    $con = new PDO('mysql:host='.$serveur.';dbname='.$bddname,$loginserveur, $mdpserveur, $pdo_options);
+    return $con;
 }
-// option pour capturer messages d'erreur
-catch (exception $e){
-    die('Erreur: ' .$e->getMessage());
-}
-?>

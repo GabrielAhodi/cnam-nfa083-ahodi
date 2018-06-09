@@ -9,11 +9,11 @@
     <!-- PRESENTATION Hébergeur ============================================================== -->
     <section>
         <h2>Informations sur mon hébergeur</h2>
-        <p><strong>Nom : </strong> Gandi</p>
-        <p><strong>Logo : </strong> <img src="img/gandi.jpg" /></p>
-        <p><strong>Siège social : </strong> 63, 65 Boulevard Massena 75013 Paris</p>
+        <p><strong>Nom : </strong> LWS</p>
+        <p><strong>Logo : </strong> <img src="img/lws.jpg" /></p>
+        <p><strong>Siège social : </strong> 4 Rue Galvani 75017 Paris</p>
         <p><strong>Lien d'inscription : </strong>
-            <a href="https://www.gandi.net/fr/simple-hosting" target="_blanck">Inscription Gandi</a></p>
+            <a href="https://www.lws.fr/hebergement_web.php" target="_blanck">Inscription LWS</a></p>
     </section>
     <section>
         <h2>Informations sur la page question.php</h2>
@@ -23,13 +23,15 @@
         <p><strong>Temps lié CSS (ms) : </strong> 42 ms</p>
         <p><strong>Temps lié JS (ms) : </strong> 10 ms</p>
         <p><strong>Adresse IP d'hébergement de la page question.php 
-           (http://www.mon-ip.com/adresse-ip-site-internet.php) : </strong> 217.70.180.152</p>
-        <p><strong>Nom du serveur d'hébergement de la page question.php : </strong> gpaas12.dc0.gandi.net</p>
+           (http://www.mon-ip.com/adresse-ip-site-internet.php) : </strong>
+            <?php echo $_SERVER['SERVER_ADDR'];?>
+        </p>
+        <p><strong>Nom du serveur d'hébergement de la page question.php : </strong> ns1.lws-hosting.net</p>
     </section>
     <section>
         <h2>Complément d'information</h2>
         <p><strong>Une question complémentaire ? </strong>
-            <a href="questions.php" id="question" class="actif">Poser une question</a>
+            <a href="question.php" id="question" class="actif">Poser une question</a>
         </p>
     </section>
 

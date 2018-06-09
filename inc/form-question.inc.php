@@ -10,7 +10,7 @@
 
     <p><strong><label for="question_texte" >Votre question *</label></strong>
         <!-- QUESTION -->
-        <textarea name="question_text" id="question_texte" cols='30' rows='4'></textarea>
+        <textarea required name="question_text" id="question_texte" cols='30' rows='4'></textarea>
     </p>
 
     <p><input type="submit" value="Envoyer" name="question_submit" /></p>
